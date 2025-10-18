@@ -1,0 +1,61 @@
+{
+  "totalUsers": 4,
+  "users": [
+    {
+      "id": "user-1",
+      "profile": {
+        "name": "Алексей",
+        "surname": "Иванов",
+        "email": "admin@social.com",
+        "birthDate": "1990-05-15",
+        "avatar": "/avatars/user1.jpg"
+      },
+      "role": "admin",
+      "status": "active",
+      "registrationDate": "2024-01-10",
+      "friends": ["user-2", "user-3"]
+    },
+    {
+      "id": "user-2",
+      "profile": {
+        "name": "Мария",
+        "surname": "Петрова",
+        "email": "maria@social.com",
+        "birthDate": "1995-08-22",
+        "avatar": "/avatars/user1.jpg"
+      },
+      "role": "user",
+      "status": "active",
+      "registrationDate": "2024-01-12",
+      "friends": ["user-1"]
+    },
+    {
+      "id": "user-3",
+      "profile": {
+        "name": "Сергей",
+        "surname": "Сидоров",
+        "email": "sergey@social.com",
+        "birthDate": "1988-12-03",
+        "avatar": "/avatars/user1.jpg"
+      },
+      "role": "user",
+      "status": "pending",
+      "registrationDate": "2024-01-15",
+      "friends": ["user-1", "user-4"]
+    },
+    {
+      "id": "user-4",
+      "profile": {
+        "name": "Иван",
+        "surname": "Иванов",
+        "email": "ivan@social.com",
+        "birthDate": "1992-03-10",
+        "avatar": "/avatars/user1.jpg"
+      },
+      "role": "user",
+      "status": "blocked",
+      "registrationDate": "2024-01-08",
+      "friends": ["user-3"]
+    }
+  ]
+}

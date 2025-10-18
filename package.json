@@ -1,0 +1,32 @@
+{
+  "name": "social-network-admin",
+  "version": "1.0.0",
+  "scripts": {
+    "sass:watch": "sass --watch public/scss:dist/css",
+    "server:build": "nodemon src/server/server.ts",
+    "dev": "concurrently \"npm run sass:watch\" \"npm run server:build\"",
+    "build": "tsc",
+    "start": "node dist/server/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.7.2",
+    "babel-loader": "^10.0.0",
+    "concurrently": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "nodemon": "^3.1.10",
+    "pug": "^3.0.3",
+    "sass": "^1.93.2",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
+}
