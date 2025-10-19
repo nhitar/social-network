@@ -1,22 +1,24 @@
 import { Router } from 'express';
-import { User, Post } from '../types'
+import { User, Post } from '../types';
 import fs from 'fs';
 import path from 'path';
 
 const router = Router();
 
-const pathJSON = path.join(__dirname, '../../../data');
-const usersJSON = fs.readFileSync(pathJSON + '/users.json', 'utf-8');
+const projectRoot = process.cwd();
+const pathJSON = path.join(projectRoot, 'data'); // Исправленный путь
+
+const usersJSON = fs.readFileSync(path.join(pathJSON, 'users.json'), 'utf-8');
 const parsedUsersJSON = JSON.parse(usersJSON);
 
-const postsJSON = fs.readFileSync(pathJSON + '/posts.json', 'utf-8');
+const postsJSON = fs.readFileSync(path.join(pathJSON, 'posts.json'), 'utf-8');
 const parsedPostsJSON = JSON.parse(postsJSON);
 
 function saveUsers() {
-    fs.writeFile(pathJSON + '/users.json', JSON.stringify(parsedUsersJSON , null, 2), (err) => {
+    fs.writeFile(path.join(pathJSON, 'users.json'), JSON.stringify(parsedUsersJSON, null, 2), (err) => {
         if (err) throw err;
     });
-};
+}
 
 router.get('/', (req, res) => {
     res.redirect('/users');
@@ -25,7 +27,7 @@ router.get('/', (req, res) => {
 router.get('/users', (req, res) => {
     let users: User[] = parsedUsersJSON.users;
     res.render('userList', {
-        users:users
+        users: users
     });
 });
 
@@ -65,7 +67,7 @@ router.get('/users/:user_id/friends', (req, res) => {
     res.render('userFriends', {
         user: user,
         friends: userFriends
-      });
+    });
 });
 
 router.get('/users/:user_id/posts', (req, res) => {
@@ -87,9 +89,7 @@ router.get('/users/:user_id/posts', (req, res) => {
     res.render('userPosts', {
         user: user,
         posts: friendsPosts
-      });
-
+    });
 });
-
 
 export default router;
