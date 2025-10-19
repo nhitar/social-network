@@ -1,5 +1,5 @@
 {
-  "name": "social-network",
+  "name": "@nhitar/social-network",
   "version": "1.0.0",
   "scripts": {
     "sass:watch": "sass --watch public/sass:dist/dev/css",
@@ -32,6 +32,7 @@
     "gulp-typescript": "^6.0.0-alpha.1",
     "mini-css-extract-plugin": "^2.9.4",
     "nodemon": "^3.1.10",
+    "open": "^10.2.0",
     "pug": "^3.0.3",
     "sass": "^1.93.2",
     "sass-loader": "^16.0.5",
