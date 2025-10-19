@@ -42,17 +42,14 @@ html
 
             dialog(id=`userDialog${user.id}`)
               form(method="POST" action=`/users/${user.id}`)
-                br
                 input(type="text" name="userName" value=`${user.profile.name}` required)
                 input(type="text" name="userSurname" value=`${user.profile.surname}` required)
-                br
-                input(type="text" name="userEmail" value=`${user.profile.email}` required)
-                input(type="text" name="userBirthDate" value=`${user.profile.birthDate}` required)
-                br
+                input(type="text" name="userEmail" value=`${user.profile.email}` required pattern="[^@\\s]+@[^@\\s]+\\.[^@\\s]+")
+                input(type="text" name="userBirthDate" value=`${user.profile.birthDate}` required pattern="[0-3][0-9]\\.[0-1][0-9]\\.[12][0-9][0-9][0-9]")
+
                 select(name="userRole" required)
                   option(value="user" selected=user.role === 'user') Пользователь
                   option(value="admin" selected=user.role === 'admin') Администратор
-
                 select(name="userStatus" required)
                   option(value="pending" selected=user.status === 'pending') Не подтверждён
                   option(value="active" selected=user.status === 'active') Активный

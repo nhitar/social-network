@@ -7,12 +7,12 @@
         "name": "Алексей",
         "surname": "Иванов",
         "email": "admin@social.com",
-        "birthDate": "1990-05-15",
+        "birthDate": "15.05.1990",
         "avatar": "/avatars/user1.jpg"
       },
       "role": "admin",
       "status": "active",
-      "registrationDate": "2024-01-10",
+      "registrationDate": "10.01.2024",
       "friends": [
         "user-2",
         "user-3",
@@ -26,12 +26,12 @@
         "name": "Мария",
         "surname": "Петрова",
         "email": "maria@social.com",
-        "birthDate": "1995-08-22",
+        "birthDate": "22.08.1995",
         "avatar": "/avatars/user2.jpg"
       },
       "role": "user",
       "status": "active",
-      "registrationDate": "2024-01-12",
+      "registrationDate": "12.01.2024",
       "friends": [
         "user-1",
         "user-3",
@@ -44,12 +44,12 @@
         "name": "Сергей",
         "surname": "Сидоров",
         "email": "sergey@social.com",
-        "birthDate": "1988-12-03",
+        "birthDate": "03.12.1988",
         "avatar": "/avatars/user3.jpg"
       },
       "role": "user",
       "status": "pending",
-      "registrationDate": "2024-01-15",
+      "registrationDate": "15.01.2024",
       "friends": [
         "user-1",
         "user-4",
@@ -63,12 +63,12 @@
         "name": "Иван",
         "surname": "Иванов",
         "email": "ivan@social.com",
-        "birthDate": "1992-03-10",
+        "birthDate": "10.03.1992",
         "avatar": "/avatars/user4.jpg"
       },
       "role": "user",
       "status": "blocked",
-      "registrationDate": "2024-01-08",
+      "registrationDate": "08.01.2024",
       "friends": [
         "user-3"
       ]
@@ -79,12 +79,12 @@
         "name": "Елена",
         "surname": "Козлова",
         "email": "elena@social.com",
-        "birthDate": "1993-07-18",
+        "birthDate": "18.07.1993",
         "avatar": "/avatars/user5.jpg"
       },
       "role": "user",
       "status": "active",
-      "registrationDate": "2024-01-20",
+      "registrationDate": "20.01.2024",
       "friends": [
         "user-1",
         "user-6"
@@ -96,12 +96,12 @@
         "name": "Дмитрий",
         "surname": "Фёдоров",
         "email": "dmitry@social.com",
-        "birthDate": "1987-11-25",
+        "birthDate": "25.11.1987",
         "avatar": "/avatars/user6.jpg"
       },
       "role": "user",
       "status": "active",
-      "registrationDate": "2024-01-22",
+      "registrationDate": "22.01.2024",
       "friends": [
         "user-2",
         "user-5",
@@ -114,12 +114,12 @@
         "name": "Ольга",
         "surname": "Никитина",
         "email": "olga@social.com",
-        "birthDate": "1991-04-14",
+        "birthDate": "14.04.1991",
         "avatar": "/avatars/user7.jpg"
       },
       "role": "user",
       "status": "active",
-      "registrationDate": "2024-01-25",
+      "registrationDate": "25.01.2024",
       "friends": [
         "user-1",
         "user-6",
@@ -132,12 +132,12 @@
         "name": "Артём",
         "surname": "Васильев",
         "email": "artem@social.com",
-        "birthDate": "1989-09-30",
+        "birthDate": "30.09.1989",
         "avatar": "/avatars/user8.jpg"
       },
       "role": "user",
       "status": "pending",
-      "registrationDate": "2024-01-28",
+      "registrationDate": "28.01.2024",
       "friends": [
         "user-3",
         "user-7"
