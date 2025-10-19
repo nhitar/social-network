@@ -7,52 +7,55 @@ html
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css")
   body 
     .container.p-4
-      each user in users
-        .user-card
-          .user-avatar
-            img(src=user.profile.avatar, alt="Avatar", width="60" height="60")
-          
-          .user-info
-            h5= user.profile.name + ' ' + user.profile.surname
-            p Email: #{user.profile.email}
-            p Дата рождения: #{user.profile.birthDate}
-            .d-flex.gap-2
-              span.badge.bg-secondary= user.role
-              span.badge(class={
-                'bg-success': user.status === 'active',
-                'bg-warning': user.status === 'pending', 
-                'bg-danger': user.status === 'blocked'
-              })= user.status
-          
-          .user-actions
-            button.btn.btn-primary.btn-sm(
-              onclick=`document.getElementById('userDialog${user.id}').showModal()`
-            ) Редактировать
-            
-            a.btn.btn-outline-primary.btn-sm(href=`/users/${user.id}/friends`)
-              i.fas.fa-users.me-1
-              | Друзья
+      .row.justify-content-center
+        .col-12.col-xl-8
+          h1 Пользователи кошачей сети
+          each user in users
+            .user-card
+              .user-avatar
+                img(src=user.profile.avatar, alt="Avatar")
+              
+              .user-info
+                h5= user.profile.name + ' ' + user.profile.surname
+                p Email: #{user.profile.email}
+                p Дата рождения: #{user.profile.birthDate}
+                .d-flex.gap-2
+                  span.badge.bg-secondary= user.role
+                  span.badge(class={
+                    'bg-success': user.status === 'active',
+                    'bg-warning': user.status === 'pending', 
+                    'bg-danger': user.status === 'blocked'
+                  })= user.status
+              
+              .user-actions
+                button.btn.btn-primary.btn-sm(
+                  onclick=`document.getElementById('userDialog${user.id}').showModal()`
+                ) Редактировать
+                
+                a.btn.btn-outline-primary.btn-sm(href=`/users/${user.id}/friends`)
+                  i.fas.fa-users.me-1
+                  | Друзья
 
-            a.btn.btn-outline-primary.btn-sm(href=`/users/${user.id}/posts`)
-              i.fas.fa-navicon.me-1
-              | Новости
+                a.btn.btn-outline-primary.btn-sm(href=`/users/${user.id}/posts`)
+                  i.fas.fa-navicon.me-1
+                  | Новости
 
-        dialog(id=`userDialog${user.id}`)
-          form(method="POST" action=`/users/${user.id}`)
-            br
-            input(type="text" name="userName" value=`${user.profile.name}` required)
-            input(type="text" name="userSurname" value=`${user.profile.surname}` required)
-            br
-            input(type="text" name="userEmail" value=`${user.profile.email}` required)
-            input(type="text" name="userBirthDate" value=`${user.profile.birthDate}` required)
-            br
-            select(name="userRole" required)
-              option(value="user" selected=user.role === 'user') Пользователь
-              option(value="admin" selected=user.role === 'admin') Администратор
+            dialog(id=`userDialog${user.id}`)
+              form(method="POST" action=`/users/${user.id}`)
+                br
+                input(type="text" name="userName" value=`${user.profile.name}` required)
+                input(type="text" name="userSurname" value=`${user.profile.surname}` required)
+                br
+                input(type="text" name="userEmail" value=`${user.profile.email}` required)
+                input(type="text" name="userBirthDate" value=`${user.profile.birthDate}` required)
+                br
+                select(name="userRole" required)
+                  option(value="user" selected=user.role === 'user') Пользователь
+                  option(value="admin" selected=user.role === 'admin') Администратор
 
-            select(name="userStatus" required)
-              option(value="pending" selected=user.status === 'pending') Не подтверждён
-              option(value="active" selected=user.status === 'active') Активный
-              option(value="blocked" selected=user.status === 'blocked') Заблокирован
-            button(type="submit") Сохранить
-            button(type="button" onclick=`document.getElementById('userDialog${user.id}').close()`) Отмена
+                select(name="userStatus" required)
+                  option(value="pending" selected=user.status === 'pending') Не подтверждён
+                  option(value="active" selected=user.status === 'active') Активный
+                  option(value="blocked" selected=user.status === 'blocked') Заблокирован
+                button.btn.btn-primary.btn-sm(type="submit") Сохранить
+                button.btn.btn-primary.btn-sm(type="button" onclick=`document.getElementById('userDialog${user.id}').close()`) Отмена

@@ -6,7 +6,7 @@ import path from 'path';
 const router = Router();
 
 const projectRoot = process.cwd();
-const pathJSON = path.join(projectRoot, 'data'); // Исправленный путь
+const pathJSON = path.join(projectRoot, 'data');
 
 const usersJSON = fs.readFileSync(path.join(pathJSON, 'users.json'), 'utf-8');
 const parsedUsersJSON = JSON.parse(usersJSON);
@@ -82,7 +82,15 @@ router.get('/users/:user_id/posts', (req, res) => {
         return res.status(404).send('Пользователь не найден');
     }
 
-    const friendsPosts = posts.filter(post => 
+    const postsWithAuthors = posts.map(post => {
+        const author = users.find(u => u.id === post.authorId);
+        return {
+            ...post,
+            author: author
+        };
+    });
+
+    const friendsPosts = postsWithAuthors.filter(post => 
         user.friends.includes(post.authorId)
     );
 
