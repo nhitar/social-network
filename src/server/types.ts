@@ -19,7 +19,6 @@ export interface Post {
     author?: User;
     content: string;
     photo?: string;
-    timestamp: string;
+    date: string;
     likes: string[];
-    visibility: 'public' | 'friends_only';
 }

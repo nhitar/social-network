@@ -5,126 +5,111 @@
       "authorId": "user-1",
       "content": "Сегодня отличный день для программирования!",
       "photo": "/photos/coding.jpg",
-      "timestamp": "25.01.2024",
-      "likes": ["user-2", "user-3", "user-5"],
-      "visibility": "public"
+      "date": "25.01.2024",
+      "likes": ["user-2", "user-3", "user-5"]
     },
     {
       "id": "post-2", 
       "authorId": "user-2",
       "content": "Отдыхаем! Рекомендую это место всем!",
       "photo": "/photos/vacation.jpg",
-      "timestamp": "24.01.2024",
-      "likes": ["user-1", "user-6"],
-      "visibility": "friends_only"
+      "date": "24.01.2024",
+      "likes": ["user-1", "user-6"]
     },
     {
       "id": "post-3",
       "authorId": "user-3", 
       "content": "Попробовал новый рецепт пасты карбонара, получилось очень вкусно!",
-      "timestamp": "23.01.2024",
-      "likes": ["user-1", "user-4", "user-7"],
-      "visibility": "public"
+      "date": "23.01.2024",
+      "likes": ["user-1", "user-4", "user-7"]
     },
     {
       "id": "post-4",
       "authorId": "user-4",
       "content": "Утренняя пробежка в парке 🏃‍♂️",
-      "timestamp": "22.01.2024",
-      "likes": ["user-1", "user-3", "user-8"],
-      "visibility": "public"
+      "date": "22.01.2024",
+      "likes": ["user-3"]
     },
     {
       "id": "post-5",
       "authorId": "user-1",
       "content": "Прочитал интересную книгу по разработке ПО.",
-      "timestamp": "21.01.2024", 
-      "likes": ["user-2"],
-      "visibility": "public"
+      "date": "21.01.2024", 
+      "likes": ["user-2"]
     },
     {
       "id": "post-6",
       "authorId": "user-2",
       "content": "Кофе и код - идеальное сочетание!",
       "photo": "/photos/coffee.jpg",
-      "timestamp": "20.01.2024",
-      "likes": ["user-1", "user-3", "user-4"],
-      "visibility": "friends_only"
+      "date": "20.01.2024",
+      "likes": ["user-1", "user-3", "user-4"]
     },
     {
       "id": "post-7",
       "authorId": "user-3",
       "content": "Запустил новый пет-проект на React!",
-      "timestamp": "19.01.2024",
-      "likes": ["user-1", "user-2", "user-5"],
-      "visibility": "public"
+      "date": "19.01.2024",
+      "likes": ["user-1", "user-2", "user-5"]
     },
     {
       "id": "post-8", 
       "authorId": "user-4",
       "content": "Вечерний закат в городе.",
       "photo": "/photos/sunset.jpg",
-      "timestamp": "18.01.2024",
-      "likes": ["user-2", "user-3", "user-6"],
-      "visibility": "public"
+      "date": "18.01.2024",
+      "likes": ["user-3"]
     },
     {
       "id": "post-9",
       "authorId": "user-5",
       "content": "Нашла отличный рецепт домашнего хлеба!",
-      "timestamp": "17.01.2024",
-      "likes": ["user-1", "user-6"],
-      "visibility": "public"
+      "date": "17.01.2024",
+      "likes": ["user-1", "user-6"]
     },
     {
       "id": "post-10",
       "authorId": "user-6",
       "content": "Сегодня отличная погода!",
       "photo": "/photos/day.jpg",
-      "timestamp": "16.01.2024",
-      "likes": ["user-2", "user-5", "user-7"],
-      "visibility": "friends_only"
+      "date": "16.01.2024",
+      "likes": ["user-2", "user-5", "user-7"]
     },
     {
       "id": "post-11",
       "authorId": "user-7",
       "content": "Посетила интересную выставку современного искусства. Рекомендую!",
-      "timestamp": "15.01.2024",
-      "likes": ["user-1", "user-3", "user-8"],
-      "visibility": "public"
+      "date": "15.01.2024",
+      "likes": ["user-1", "user-3", "user-8"]
     },
     {
       "id": "post-12",
       "authorId": "user-8",
       "content": "Закончил новый проект на работе!",
-      "timestamp": "14.01.2024",
-      "likes": ["user-3", "user-7"],
-      "visibility": "public"
+      "date": "14.01.2024",
+      "likes": ["user-3", "user-7"]
     },
     {
       "id": "post-13",
       "authorId": "user-7",
       "content": "Учимся играть на гитаре. Первые аккорды даются непросто!",
-      "timestamp": "13.01.2024",
-      "likes": ["user-1", "user-3", "user-8"],
-      "visibility": "friends_only"
+      "date": "13.01.2024",
+      "likes": ["user-1", "user-3", "user-8"]
     },
     {
       "id": "post-14",
       "authorId": "user-5",
       "content": "Открыл для себя новый жанр музыки. Что посоветуете послушать?",
       "photo": "/photos/music.jpg",
-      "timestamp": "12.01.2024",
-      "likes": ["user-1", "user-6"],
-      "visibility": "public"
+      "date": "12.01.2024",
+      "likes": ["user-1", "user-6"]
     },
     {
       "id": "post-15",
       "authorId": "user-1",
       "content": "Планирую поход на выходные.",
-      "timestamp": "11.01.2024",
-      "likes": ["user-2", "user-3", "user-5", "user-7"],
-      "visibility": "public"
+      "date": "11.01.2024",
+      "likes": ["user-2", "user-3", "user-5", "user-7"]
     }
   ]
 }

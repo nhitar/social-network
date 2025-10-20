@@ -6,7 +6,9 @@
     "server:build": "nodemon dist/dev/server/server.js",
     "dev": "tsc && concurrently \"npm run sass:watch\" \"npm run server:build\"",
     "build:gulp": "gulp build",
+    "start:gulp": "node dist/gulp/server/server.js",
     "build:webpack": "webpack",
+    "start:webpack": "node dist/webpack/server/server.js",
     "build": "npm run build:gulp && npm run build:webpack"
   },
   "dependencies": {
