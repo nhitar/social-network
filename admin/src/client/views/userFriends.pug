@@ -19,7 +19,7 @@ html
           each friend in friends
             .user-card
               .user-avatar
-                img(src=friend.profile.avatar, alt="Avatar", width="50")
+                img(src=`/avatars/${friend.profile.avatar}`, alt="Avatar", width="50")
               .user-info
                 h5= friend.profile.name + ' ' + friend.profile.surname
                 p Email: #{friend.profile.email}

@@ -11,10 +11,15 @@ html
       .row.justify-content-center
         .col-12.col-xl-8
           h1 Пользователи кошачей сети
+          
+          a.btn.btn-success(href="http://localhost:4200/profile")
+              i.fas.fa-arrow-right.me-2
+              | Перейти в приложение
+          
           each user in users
             .user-card
               .user-avatar
-                img(src=user.profile.avatar, alt="Avatar")
+                img(src=`/avatars/${user.profile.avatar}`, alt="Avatar")
               
               .user-info
                 h5= user.profile.name + ' ' + user.profile.surname

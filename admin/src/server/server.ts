@@ -23,9 +23,7 @@ server.use(express.json());
 server.use('/avatars', express.static(path.join(projectRoot, 'public/avatars')));
 server.use('/photos', express.static(path.join(projectRoot, 'public/photos')));
 server.use('/favicon', express.static(path.join(projectRoot, 'public/favicon')));
-server.use('/css', express.static(path.join(__dirname, '../css'))); // in production version
+server.use('/css', express.static(path.join(__dirname, '../css')));
 server.use('/', routes);
 
-https.createServer(options, server).listen(3000, () => {
-    open('https://localhost:3000');
-});
+https.createServer(options, server).listen(3001, () => {});

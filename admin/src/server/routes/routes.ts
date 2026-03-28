@@ -6,7 +6,7 @@ import path from 'path';
 const router = Router();
 
 const projectRoot = process.cwd();
-const pathJSON = path.join(projectRoot, 'data');
+const pathJSON = path.join(projectRoot, 'public/data');
 
 const usersJSON = fs.readFileSync(path.join(pathJSON, 'users.json'), 'utf-8');
 const parsedUsersJSON = JSON.parse(usersJSON);

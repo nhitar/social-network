@@ -7,6 +7,7 @@ export interface User {
         email: string;
         avatar: string;
     };
+    password: string;
     role: 'admin' | 'user';
     status: 'pending' | 'active' | 'blocked';
     registrationDate: string;
