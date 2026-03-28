@@ -32,9 +32,9 @@ npm i
 npm run dev
 ```
 
-Сервер: `localhost:3000`;
+Сервер: `localhost:3000`.
 
-Панель администратора: `localhost:3001`;
+Панель администратора: `localhost:3001`.
 
 Соцсеть: `localhost:4200`.
 
