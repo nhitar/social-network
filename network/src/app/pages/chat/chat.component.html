@@ -1,0 +1,65 @@
+<div class="container p-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-6">
+        <div class="d-flex align-items-center mb-4">
+          <button (click)="navigateFriends()" class="btn btn-outline-secondary me-3">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          
+          @if (friend) {
+            <app-user-avatar [user]="friend" [size]="50" class="me-3"></app-user-avatar>
+            <div>
+              <h4 class="mb-0">{{ friend.profile.name }} {{ friend.profile.surname }}</h4>
+              <small class="text-muted">{{ friend.profile.email }}</small>
+            </div>
+          }
+        </div>
+        
+        <div class="chat-container card">
+            @if (isLoading) {
+                <div class="text-center py-5">
+                  <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Загрузка...</span>
+                  </div>
+                  <p class="mt-2">Загрузка сообщений...</p>
+                </div>
+            } @else {
+                <div #messagesContainer class="chat-messages card-body">
+                @for (message of messages; track message.id) {
+                <div class="message" [class.my-message]="message.senderId === currentUser?.id">
+                    <div class="message-content">
+                    <p class="message-text">{{ message.message }}</p>
+                    <small class="message-time">{{ message.date }}</small>
+                    </div>
+                </div>
+                }
+                
+                @if (messages.length === 0) {
+                <div class="text-center text-muted py-5">
+                    <i class="fas fa-comments fa-2x mb-2"></i>
+                    <p>Начните общение</p>
+                </div>
+                }
+            </div>
+    
+            <div class="chat-input card-footer">
+                <div class="input-group">
+                <input 
+                    type="text" 
+                    class="form-control" 
+                    placeholder="Введите сообщение..."
+                    [(ngModel)]="newMessage"
+                    (keyup.enter)="sendMessage()">
+                <button 
+                    class="btn btn-primary" 
+                    (click)="sendMessage()"
+                    [disabled]="!newMessage.trim()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                </div>
+            </div>
+            }
+        </div>
+      </div>
+    </div>
+  </div>

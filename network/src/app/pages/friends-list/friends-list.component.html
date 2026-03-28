@@ -1,0 +1,99 @@
+<div class="container p-4">
+    <div class="row justify-content-center">
+      <div class="col-12 col-xl-6">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h1 class="mb-0">
+            <i class="fas fa-users me-2"></i>
+            Мои друзья
+          </h1>
+          <div>
+            <button (click)="navigatePosts()" class="btn btn-outline-primary me-2">
+              <i class="fas fa-newspaper me-1"></i>
+              Новости
+            </button>
+            <button (click)="navigateProfile()" class="btn btn-outline-secondary">
+              <i class="fas fa-user me-1"></i>
+              Профиль
+            </button>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5>Добавить друга</h5>
+            <div class="row g-2">
+              <div class="col">
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  placeholder="Имя"
+                  [(ngModel)]="searchName">
+              </div>
+              <div class="col">
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  placeholder="Фамилия"
+                  [(ngModel)]="searchSurname">
+              </div>
+              <div class="col-auto">
+                <button 
+                  class="btn btn-primary"
+                  (click)="addFriend()"
+                  [disabled]="!searchName || !searchSurname">
+                  Добавить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        @if (isLoading) {
+            <div class="text-center py-5">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Загрузка...</span>
+              </div>
+              <p class="mt-2">Загрузка друзей...</p>
+            </div>
+        } @else {
+            <div class="friends-list">
+            @for (friend of friends; track friend.id) {
+                <div class="friend-card card mb-3">
+                <div class="card-body d-flex align-items-center">
+                    <app-user-avatar 
+                    [user]="friend" 
+                    [size]="60"
+                    class="me-3">
+                    </app-user-avatar>
+                    
+                    <div class="friend-info flex-grow-1">
+                    <h5 class="card-title mb-1">
+                        {{ friend.profile.name }} {{ friend.profile.surname }}
+                    </h5>
+                    <p class="card-text text-muted mb-0">
+                        {{ friend.profile.email }}
+                    </p>
+                    </div>
+                    
+                    <button 
+                    (click)="openChat(friend.id)"
+                    class="btn btn-primary">
+                    <i class="fas fa-comment me-1"></i>
+                    Написать
+                    </button>
+                </div>
+                </div>
+            }
+            
+            @if (friends.length === 0) {
+                <div class="text-center py-5">
+                <i class="fas fa-user-friends fa-3x text-muted mb-3"></i>
+                <h4>Пока нет друзей</h4>
+                <p class="text-muted">Добавьте друзей чтобы общаться</p>
+                </div>
+            }
+            </div>
+        }
+      </div>
+    </div>
+  </div>

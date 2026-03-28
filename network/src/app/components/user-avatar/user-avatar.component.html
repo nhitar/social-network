@@ -1,0 +1,7 @@
+<div class="user-avatar">
+    <img 
+      [src]="'assets/avatars/' + (user?.profile?.avatar || 'default-avatar.jpg')" 
+      [alt]="user?.profile?.name || 'User'"
+      [style.width.px]="size"
+      [style.height.px]="size">
+  </div>

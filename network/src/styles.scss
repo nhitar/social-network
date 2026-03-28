@@ -1,0 +1,72 @@
+$primary-color: #3498db;
+$danger-color: #e74c3c;
+$text-color: #2c3e50;
+
+@mixin avatar($size: 50px, $object-position: center 25%) {
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: $object-position;
+}
+
+@mixin card($background: white, $padding: 15px) {
+  background: $background;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: $padding;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: $text-color;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: $primary-color;
+  text-align: center;
+  border-bottom: 2px solid $primary-color;
+  padding-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  
+  &:hover {
+    background-color: #2980b9;
+  }
+  
+  &:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+}
+
+.btn-secondary {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  
+  &:hover {
+    background-color: #7f8c8d;
+  }
+}
+
+.text-center { text-align: center; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }

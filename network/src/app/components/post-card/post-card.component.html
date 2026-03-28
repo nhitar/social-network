@@ -1,0 +1,44 @@
+<article class="post-card card mb-4 shadow-sm">
+  <div class="card-body">
+    <div class="post-header d-flex align-items-center mb-3">
+      <app-user-avatar 
+        [user]="author"
+        [size]="80"
+        class="me-3">
+      </app-user-avatar>
+      
+      <div class="post-meta">
+        <h5 class="card-title mb-1">
+          {{ author?.profile?.name }} {{ author?.profile?.surname }}
+        </h5>
+        <small class="text-muted">
+          <i class="fas fa-calendar-alt me-1"></i>
+          {{ post.date }}
+        </small>
+      </div>
+    </div>
+    
+    <div class="post-content text-center mb-3">
+      <p class="card-text">{{ post.content }}</p>
+      @if (post.photo) {
+        <img [src]="'assets/photos/' + post.photo" 
+             alt="Post image" 
+             class="img-fluid rounded mb-3">
+      }
+    </div>
+    
+    <div class="post-stats">
+      <span class="badge bg-light text-dark me-2">
+        <i class="fas fa-heart text-danger me-1"></i>
+        {{ post.likes.length }} лайков
+      </span>
+    </div>
+    
+    <div class="post-actions mt-3">
+      <button (click)="onLike()" class="like-btn" [class.liked]="isLiked">
+        <i class="fas fa-heart me-1"></i>
+        {{ isLiked ? 'Лайкнуто' : 'Лайк' }}
+      </button>
+    </div>
+  </div>
+</article>

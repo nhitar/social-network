@@ -1,0 +1,72 @@
+@use '../../../styles.scss' as *;
+
+.post-card {
+  @include card();
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+    .post-meta {
+      flex-grow: 1;
+      
+      h5 {
+        color: $primary-color;
+        margin: 0 0 5px 0;
+      }
+      
+      .post-date {
+        color: #666;
+        font-size: 0.9em;
+      }
+    }
+  }
+  
+  .post-content {
+    p {
+      margin: 0 0 15px 0;
+      line-height: 1.5;
+      color: #666;
+    }
+    
+    img {
+      max-width: 400px;
+      max-height: 400px;
+      border-radius: 8px;
+    }
+  }
+  
+  .post-stats {
+    margin-bottom: 10px;
+  }
+  
+  .post-actions {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    
+    .like-btn {
+      border: 2px solid #dc3545;
+      background: white;
+      color: #dc3545;
+      padding: 6px 12px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      font-weight: 500;
+      
+      &.liked {
+        background: #dc3545;
+        color: white;
+      }
+      
+      &:not(.liked):hover {
+        background: #fff5f5;
+      }
+      
+      &:hover {
+        transform: translateY(-1px);
+      }
+    }
+  }
+}
