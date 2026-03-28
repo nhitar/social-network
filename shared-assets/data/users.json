@@ -151,38 +151,6 @@
         "c3d4e5f6-g7h8-9012-cdef-345678901234",
         "g7h8i9j0-k1l2-3456-ghij-789012345678"
       ]
-    },
-    {
-      "id": "08b91bf9-7868-436d-8baf-6e48828163db",
-      "profile": {
-        "name": "Никита",
-        "surname": "Пивоев",
-        "email": "nikita.pivoev@yandex.ru",
-        "birthDate": "24.10.2004",
-        "avatar": "user2.jpg"
-      },
-      "password": "nhitar",
-      "role": "user",
-      "status": "active",
-      "registrationDate": "09.11.2025",
-      "friends": []
-    },
-    {
-      "id": "d0542b4d-556a-4fb2-ac2e-2b5f0ee27529",
-      "profile": {
-        "name": "Н",
-        "surname": "П",
-        "email": "n@y.ru",
-        "birthDate": "11.11.1111",
-        "avatar": "default-avatar.jpg"
-      },
-      "password": "123",
-      "role": "user",
-      "status": "active",
-      "registrationDate": "10.11.2025",
-      "friends": [
-        "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
-      ]
     }
   ]
 }
