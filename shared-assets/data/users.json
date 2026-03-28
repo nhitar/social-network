@@ -1,0 +1,188 @@
+{
+  "totalUsers": 10,
+  "users": [
+    {
+      "id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "profile": {
+        "name": "Алексей",
+        "surname": "Сергеев",
+        "email": "admin@social.com",
+        "birthDate": "15.05.1990",
+        "avatar": "user1.jpg"
+      },
+      "password": "Админ",
+      "role": "admin",
+      "status": "active",
+      "registrationDate": "10.01.2024",
+      "friends": [
+        "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+        "c3d4e5f6-g7h8-9012-cdef-345678901234",
+        "e5f6g7h8-i9j0-1234-efgh-567890123456",
+        "g7h8i9j0-k1l2-3456-ghij-789012345678",
+        "d0542b4d-556a-4fb2-ac2e-2b5f0ee27529"
+      ]
+    },
+    {
+      "id": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+      "profile": {
+        "name": "Мария",
+        "surname": "Петрова",
+        "email": "maria@social.com",
+        "birthDate": "22.08.1995",
+        "avatar": "user2.jpg"
+      },
+      "password": "Мария123",
+      "role": "user",
+      "status": "active",
+      "registrationDate": "12.01.2024",
+      "friends": [
+        "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "c3d4e5f6-g7h8-9012-cdef-345678901234",
+        "f6g7h8i9-j0k1-4567-hijk-890123456789"
+      ]
+    },
+    {
+      "id": "c3d4e5f6-g7h8-9012-cdef-345678901234",
+      "profile": {
+        "name": "Сергей",
+        "surname": "Сидоров",
+        "email": "sergey@social.com",
+        "birthDate": "03.12.1988",
+        "avatar": "user3.jpg"
+      },
+      "password": "Сергей123",
+      "role": "user",
+      "status": "pending",
+      "registrationDate": "15.01.2024",
+      "friends": [
+        "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "d4e5f6g7-h8i9-0123-defg-456789012345",
+        "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+        "h8i9j0k1-l2m3-5678-ijkl-901234567890"
+      ]
+    },
+    {
+      "id": "d4e5f6g7-h8i9-0123-defg-456789012345",
+      "profile": {
+        "name": "Иван",
+        "surname": "Иванов",
+        "email": "ivan@social.com",
+        "birthDate": "10.03.1992",
+        "avatar": "user4.jpg"
+      },
+      "password": "Иван123",
+      "role": "user",
+      "status": "blocked",
+      "registrationDate": "08.01.2024",
+      "friends": [
+        "c3d4e5f6-g7h8-9012-cdef-345678901234"
+      ]
+    },
+    {
+      "id": "e5f6g7h8-i9j0-1234-efgh-567890123456",
+      "profile": {
+        "name": "Елена",
+        "surname": "Козлова",
+        "email": "elena@social.com",
+        "birthDate": "18.07.1993",
+        "avatar": "user5.jpg"
+      },
+      "password": "Елена123",
+      "role": "user",
+      "status": "active",
+      "registrationDate": "20.01.2024",
+      "friends": [
+        "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "f6g7h8i9-j0k1-4567-hijk-890123456789"
+      ]
+    },
+    {
+      "id": "f6g7h8i9-j0k1-4567-hijk-890123456789",
+      "profile": {
+        "name": "Дмитрий",
+        "surname": "Фёдоров",
+        "email": "dmitry@social.com",
+        "birthDate": "25.11.1987",
+        "avatar": "user6.jpg"
+      },
+      "password": "Дмитрий123",
+      "role": "user",
+      "status": "active",
+      "registrationDate": "22.01.2024",
+      "friends": [
+        "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+        "e5f6g7h8-i9j0-1234-efgh-567890123456",
+        "g7h8i9j0-k1l2-3456-ghij-789012345678"
+      ]
+    },
+    {
+      "id": "g7h8i9j0-k1l2-3456-ghij-789012345678",
+      "profile": {
+        "name": "Ольга",
+        "surname": "Никитина",
+        "email": "olga@social.com",
+        "birthDate": "14.04.1991",
+        "avatar": "user7.jpg"
+      },
+      "password": "Ольга123",
+      "role": "user",
+      "status": "active",
+      "registrationDate": "25.01.2024",
+      "friends": [
+        "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+        "f6g7h8i9-j0k1-4567-hijk-890123456789",
+        "h8i9j0k1-l2m3-5678-ijkl-901234567890"
+      ]
+    },
+    {
+      "id": "h8i9j0k1-l2m3-5678-ijkl-901234567890",
+      "profile": {
+        "name": "Артём",
+        "surname": "Васильев",
+        "email": "artem@social.com",
+        "birthDate": "30.09.1989",
+        "avatar": "user8.jpg"
+      },
+      "password": "Артём123",
+      "role": "user",
+      "status": "pending",
+      "registrationDate": "28.01.2024",
+      "friends": [
+        "c3d4e5f6-g7h8-9012-cdef-345678901234",
+        "g7h8i9j0-k1l2-3456-ghij-789012345678"
+      ]
+    },
+    {
+      "id": "08b91bf9-7868-436d-8baf-6e48828163db",
+      "profile": {
+        "name": "Никита",
+        "surname": "Пивоев",
+        "email": "nikita.pivoev@yandex.ru",
+        "birthDate": "24.10.2004",
+        "avatar": "user2.jpg"
+      },
+      "password": "nhitar",
+      "role": "user",
+      "status": "active",
+      "registrationDate": "09.11.2025",
+      "friends": []
+    },
+    {
+      "id": "d0542b4d-556a-4fb2-ac2e-2b5f0ee27529",
+      "profile": {
+        "name": "Н",
+        "surname": "П",
+        "email": "n@y.ru",
+        "birthDate": "11.11.1111",
+        "avatar": "default-avatar.jpg"
+      },
+      "password": "123",
+      "role": "user",
+      "status": "active",
+      "registrationDate": "10.11.2025",
+      "friends": [
+        "a1b2c3d4-e5f6-7890-abcd-ef1234567890"
+      ]
+    }
+  ]
+}

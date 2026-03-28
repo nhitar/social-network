@@ -1,0 +1,52 @@
+{
+  "messages": [
+    {
+      "id": "6cf38b64-4ddc-4861-ae87-f948d7b30d6f",
+      "senderId": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+      "receiverId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "message": "Привет",
+      "date": "10.11.2025, 03:14:03",
+      "read": false
+    },
+    {
+      "id": "84da77e0-bf50-41da-91d0-ca06881c78f4",
+      "senderId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "receiverId": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+      "message": "Привет",
+      "date": "10.11.2025, 03:14:08",
+      "read": false
+    },
+    {
+      "id": "c300f261-1c86-4b47-8bfb-e48371b75a30",
+      "senderId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "receiverId": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+      "message": "Как дела?",
+      "date": "10.11.2025, 15:17:23",
+      "read": false
+    },
+    {
+      "id": "29476368-d718-4d03-b33e-0f2a957180a2",
+      "senderId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "receiverId": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+      "message": "qweqw",
+      "date": "10.11.2025, 17:51:12",
+      "read": false
+    },
+    {
+      "id": "9132ff80-7de2-4665-b07e-a1b9defb1c8a",
+      "senderId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "receiverId": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+      "message": "привет",
+      "date": "02.12.2025, 12:55:52",
+      "read": false
+    },
+    {
+      "id": "448c2e32-0e81-444d-a1e0-785b74fcc7a0",
+      "senderId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+      "receiverId": "b2c3d4e5-f6g7-8901-bcde-f23456789012",
+      "message": "вау мяу",
+      "date": "02.12.2025, 12:55:56",
+      "read": false
+    }
+  ]
+}
