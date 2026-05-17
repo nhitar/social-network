@@ -9,7 +9,7 @@
 Клонирование репозитория:
 
 ```bash
-https://github.com/nhitar/social-network.git
+git clone https://github.com/nhitar/social-network.git
 cd social-network
 ```
 
